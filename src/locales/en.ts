@@ -8,6 +8,7 @@
 
 export default {
   route: {
+    testManage: 'TestManage',
     dashboard: 'Dashboard',
     documentation: 'Documentation',
     guide: 'Guide',

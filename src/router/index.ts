@@ -7,6 +7,7 @@
  */
 import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
 import Layout from '@/layout/Index.vue'
+import testManageModules from './testManageModules'
 
 const constantFiles = require.context('./constantModules', true, /\.ts$/)
 let constantModules: Array<RouteRecordRaw> = []
@@ -55,7 +56,8 @@ export const constantRoutes: Array<RouteRecordRaw> = [
 ]
 
 export const asyncRoutes: Array<RouteRecordRaw> = [
-  ...permissionModules
+  ...permissionModules,
+  ...testManageModules
 ]
 const router = createRouter({
   history: createWebHashHistory(),
