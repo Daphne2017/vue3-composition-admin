@@ -9,6 +9,8 @@
 export default {
   route: {
     testManage: '测试管理',
+    caseManage: '用例管理',
+    executePlan: '测试计划',
     dashboard: '首页',
     documentation: '文档',
     guide: '引导页',

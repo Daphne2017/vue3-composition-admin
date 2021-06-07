@@ -9,6 +9,9 @@
 export default {
   route: {
     testManage: 'TestManage',
+    caseManage: 'CaseManage',
+    executePlan: 'ExecutePlan',
+    testManageHome: 'TestManageHome',
     dashboard: 'Dashboard',
     documentation: 'Documentation',
     guide: 'Guide',

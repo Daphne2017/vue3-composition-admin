@@ -10,41 +10,53 @@ import { RouteRecordRaw } from 'vue-router'
 const chartsRouter12: Array<RouteRecordRaw> = [
 
   {
-    path: 'bar-chart',
+    path: 'caseManage',
     component: () =>
           import(
-            /* webpackChunkName: "BarChart" */ '@/views/charts/BarChartDemo.vue'
+            /* webpackChunkName: "BarChart" */ '@/views/testManage/caseManage/index.vue'
           ),
-    name: 'BarChartDemo',
+    name: 'CaseManage',
     meta: {
-      title: 'barChart',
+      title: 'caseManage',
       noCache: true
     }
   },
   {
-    path: 'line-chart',
+    path: 'executePlan',
     component: () =>
           import(
-            /* webpackChunkName: "LineChart" */ '@/views/charts/LineChartDemo.vue'
+            /* webpackChunkName: "BarChart" */ '@/views/testManage/executePlan/index.vue'
           ),
-    name: 'LineChartDemo',
+    name: 'ExecutePlan',
     meta: {
-      title: 'lineChart',
-      noCache: true
-    }
-  },
-  {
-    path: 'mixed-chart',
-    component: () =>
-          import(
-            /* webpackChunkName: "MixedChat" */ '@/views/charts/MixedChatDemo.vue'
-          ),
-    name: 'MixedChartDemo',
-    meta: {
-      title: 'mixedChart',
+      title: 'executePlan',
       noCache: true
     }
   }
+  // {
+  //   path: 'line-chart',
+  //   component: () =>
+  //         import(
+  //           /* webpackChunkName: "LineChart" */ '@/views/charts/LineChartDemo.vue'
+  //         ),
+  //   name: 'LineChartDemo',
+  //   meta: {
+  //     title: 'lineChart',
+  //     noCache: true
+  //   }
+  // },
+  // {
+  //   path: 'mixed-chart',
+  //   component: () =>
+  //         import(
+  //           /* webpackChunkName: "MixedChat" */ '@/views/charts/MixedChatDemo.vue'
+  //         ),
+  //   name: 'MixedChartDemo',
+  //   meta: {
+  //     title: 'mixedChart',
+  //     noCache: true
+  //   }
+  // }
 
 ]
 

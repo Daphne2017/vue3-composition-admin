@@ -7,7 +7,7 @@
  */
 import { RouteRecordRaw } from 'vue-router'
 import Layout from '@/layout/Index.vue'
-import chartsRouter12 from './caseReview'
+import caseManageRouter from './caseReview'
 
 const chartsRouter: Array<RouteRecordRaw> = [
   {
@@ -20,7 +20,7 @@ const chartsRouter: Array<RouteRecordRaw> = [
       icon: '#iconchart1'
     },
     children: [
-      ...chartsRouter12
+      ...caseManageRouter
     ]
   }
 ]
